@@ -16,42 +16,8 @@
     <link rel="stylesheet" type="text/css" href="../assets/vendor/fancybox/css/jquery.fancybox.min.css">
     <link rel="stylesheet" type="text/css" href="../assets/css/virtual.css">
     <link rel="stylesheet" type="text/css" href="../assets/css/minibar.virtual.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            padding: 0;
-            background-color: #f8f9fa;
-        }
-
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 5px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-
-        h1 {
-            color: #333;
-            text-align: center;
-        }
-
-        h2 {
-            color: #333;
-        }
-
-        p {
-            color: #666;
-            line-height: 1.6;
-        }
-
-        ul {
-            list-style-type: disc;
-            margin-left: 20px;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="../assets/vendor/2ndPages.css"> 
+    
 </head>
 
 <body class="theme-blue">
@@ -66,7 +32,7 @@
         <div class="content">
             <ul class="main-menu">
                 <li class="menu-item active">
-                    <a href="index.html#portfolio" class="menu-link">
+                    <a href="../index.html#portfolio" class="menu-link">
                         <span class="icon ti-arrow-left"></span>
                         <span class="caption">Back</span>
                     </a>
@@ -108,19 +74,37 @@
         <h2>Outcome:</h2>
         <p>Grocery To Go provides a convenient platform for users to shop for groceries online, offering a wide range of products and secure payment options. The website's user-friendly interface and efficient functionalities enhance the overall shopping experience for customers.</p>
 
-        <h2>Future Improvements:</h2>
-        <ul>
-            <li>Implementing additional payment gateways to offer more options to users.</li>
-            <li>Enhancing the search functionality to provide more accurate results.</li>
-            <li>Adding a rating and review system for products to help users make informed decisions.</li>
-            <li>Integrating social media login for easier user authentication.</li>
-            <li>Implementing order tracking and notification features for users to track their deliveries.</li>
-        </ul>
+        <div class="row justify-content-center mt-5 wow fadeInUp">
+            <div class="container">
+                
+                <div class="slider">
+                    <div class="slides">
+                        <div class="slide">
+                            <img src="1.png" alt="Image 1">
+                        </div>
+                        <div class="slide">
+                            <img src="2.png" alt="Image 2">
+                        </div>
+                        <div class="slide">
+                            <img src="3.png" alt="Image 3">
+                        </div>
+                     
+                       
+                    </div>
+      
+                    <div class="navigation">
+                        <button class="nav-btn prev-btn" onclick="prevSlide()">&#10094;</button>
+                        <button class="nav-btn next-btn" onclick="nextSlide()">&#10095;</button>
+                    </div>
+                </div>
+            </div>
 
-        <h2>GitHub Repository:</h2>
-        <p><a href="https://github.com/yasserbousrih/Grocery-2-Go">GitHub - Grocery To Go</a></p>
     </div>
 
+    <h2>GitHub Repository:</h2>
+        <p><a href="https://github.com/yasserbousrih/Grocery-2-Go">GitHub -  Grocery To Go</a></p>
+    </div>
+    <script src="../assets/js/workdisplay.js" defer></script>
 </body>
 
 </html>
