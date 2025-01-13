@@ -1,169 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Library Management System</title>
-  <link rel="shortcut icon" type="image/x-icon" href="../assets/favicon.ico">
-  <link rel="stylesheet" type="text/css" href="../assets/css/themify-icons.css">
-  <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.css">
-  <link rel="stylesheet" type="text/css" href="../assets/vendor/animate/animate.css">
-  <link rel="stylesheet" type="text/css" href="../assets/vendor/owl-carousel/owl.carousel.css">
-  <link rel="stylesheet" type="text/css" href="../assets/vendor/perfect-scrollbar/css/perfect-scrollbar.css">
-  <link rel="stylesheet" type="text/css" href="../assets/vendor/nice-select/css/nice-select.css">
-  <link rel="stylesheet" type="text/css" href="../assets/vendor/fancybox/css/jquery.fancybox.min.css">
-  <link rel="stylesheet" type="text/css" href="../assets/css/virtual.css">
-  <link rel="stylesheet" type="text/css" href="../assets/css/minibar.virtual.css">
-  <link rel="stylesheet" type="text/css" href="../assets/vendor/2ndPages.css">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 20px;
-      padding: 0;
-      background-color: #f8f9fa;
-    }
-    .container {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 20px;
-      background-color: #fff;
-      border-radius: 5px;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    }
-    h1 {
-      color: #7044C1;
-      text-align: center;
-    }
-    p {
-      color: #666;
-      line-height: 1.6;
-    }
-    ul {
-      list-style-type: disc;
-      margin-left: 20px;
-    }
-    .technologies {
-      margin-top: 20px;
-    }
-    .technologies ul {
-      list-style-type: none;
-      margin-left: 0;
-    }
-    .technologies li {
-      margin-bottom: 10px;
-    }
-    .project-container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 2rem;
-    }
-    h1 {
-      font-size: 3rem;
-      margin-bottom: 2rem;
-      text-align: center;
-      font-weight: bold;
-    }
-    .project-description {
-      background: #f8f9fa;
-      padding: 2rem;
-      border-radius: 15px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-      margin-bottom: 2rem;
-    }
-    .features-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 1.5rem;
-      margin: 2rem 0;
-    }
-    .feature-card {
-      background: white;
-      padding: 1.5rem;
-      border-radius: 10px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-      transition: transform 0.3s ease;
-    }
-    .feature-card:hover {
-      transform: translateY(-5px);
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management System</title>
+    <link rel="shortcut icon" href="../assets/favicon.ico">
+    <link rel="stylesheet" href="../assets/css/themify-icons.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap.css">
+    <link rel="stylesheet" href="../assets/vendor/animate/animate.css">
+    <link rel="stylesheet" href="../assets/css/virtual.css">
+    <link rel="stylesheet" href="../assets/css/minibar.virtual.css">
+    <link rel="stylesheet" href="../styles.css">
 </head>
-<body class="theme-blue">
 
-<!-- Back to top button -->
-<div class="btn-back_to_top">
-  <span class="ti-arrow-up"></span>
-</div>
-
-<!-- Mini bar -->
-<div class="minibar">
-  <div class="header">
-    <div class="brand"></div>
-  </div>
-  <div class="content">
-    <ul class="main-menu">
-      <li class="menu-item active">
-        <a href="index.html#portfolio" class="menu-link">
-          <span class="icon ti-arrow-left"></span>
-          <span class="caption">Back</span>
-        </a>
-      </li>
-    </ul>
-  </div>
-</div>
-
-<div class="project-container">
-    <h1>Library Management System</h1>
-    
-    <div class="project-description">
-        <p><strong>Description:</strong> The Library Management System is a web application developed using Django and Python. It allows librarians to manage books, patrons, and borrowing records efficiently.</p>
+<body class="theme-purple">
+    <div class="btn-back_to_top">
+        <span class="ti-arrow-up"></span>
     </div>
 
-    <div class="features-grid">
-        <div class="feature-card">
-            <h2>Key Features:</h2>
-            <ul>
-                <li>Book Management: Add, edit, and delete books.</li>
-                <li>Patron Management: Manage library patrons.</li>
-                <li>Borrowing Records: Track borrowed books.</li>
-                <li>Search Functionality: Search for books or patrons.</li>
-                <li>Responsive Design: Accessible on various devices.</li>
-            </ul>
+    <div class="minibar">
+        <div class="header">
+            <div class="brand"></div>
         </div>
-
-        <div class="feature-card">
-            <h2>Technologies Used:</h2>
-            <ul>
-                <li>Python: Core language for backend logic.</li>
-                <li>Django: Web framework for building the application.</li>
-                <li>SQLite: Database management system.</li>
-                <li>HTML/CSS/Bootstrap: Frontend development tools.</li>
-            </ul>
-        </div>
-
-        <div class="feature-card">
-            <h2>Challenges Overcome:</h2>
-            <ul>
-                <li>Implementing a responsive design.</li>
-                <li>Database integration and management.</li>
-                <li>Ensuring secure data handling.</li>
+        <div class="content">
+            <ul class="main-menu">
+                <li class="menu-item active">
+                    <a href="../index.html#portfolio" class="menu-link">
+                        <span class="icon ti-arrow-left"></span>
+                        <span class="caption">Back</span>
+                    </a>
+                </li>
             </ul>
         </div>
     </div>
 
-    <div class="project-description">
-        <h2>Outcome:</h2>
-        <p>Overall, the Library Management System is a comprehensive web application that demonstrates proficiency in Django, Python, and frontend technologies, providing a functional and user-friendly solution for managing library operations.</p>
+    <div class="project-container">
+        <h1>Library Management System</h1>
+        <div class="project-description">
+            <p><strong>Description:</strong> The Library Management System is a web application developed using Django and Python, designed to help librarians manage books, patrons, and borrowing records efficiently.</p>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card">
+                <h2>Key Features:</h2>
+                <ul>
+                    <li>Book Management: Add, edit, and delete books.</li>
+                    <li>Patron Management: Manage library patrons.</li>
+                    <li>Borrowing Records: Track borrowed books.</li>
+                    <li>Search Functionality: Search for books or patrons.</li>
+                    <li>Responsive Design: Accessible on various devices.</li>
+                </ul>
+            </div>
+            <div class="feature-card">
+                <h2>Technologies Used:</h2>
+                <ul>
+                    <li>Python: Core language for backend logic.</li>
+                    <li>Django: Web framework for building the application.</li>
+                    <li>SQLite: Database management system.</li>
+                    <li>HTML/CSS/Bootstrap: Frontend development tools.</li>
+                </ul>
+            </div>
+            <div class="feature-card">
+                <h2>Challenges Overcome:</h2>
+                <ul>
+                    <li>Implementing a responsive design.</li>
+                    <li>Database integration and management.</li>
+                    <li>Ensuring secure data handling.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="text-center">
+            <a href="https://github.com/yasserbousrih/django-library-managment" class="github-link">View on GitHub</a>
+        </div>
     </div>
 
-    <div class="text-center">
-        <a href="https://github.com/yasserbousrih/django-library-managment" class="github-link">
-            View on GitHub
-        </a>
-    </div>
-</div>
-
-<script src="../assets/js/workdisplay.js" defer></script>
+    <script src="../assets/js/workdisplay.js" defer></script>
 </body>
+
 </html>

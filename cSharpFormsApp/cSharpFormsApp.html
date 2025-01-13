@@ -3,95 +3,23 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Multi-Functional C# Dashboard</title>
-    <link rel="shortcut icon" type="image/x-icon" href="../assets/favicon.ico">
-    <link rel="stylesheet" type="text/css" href="../assets/css/themify-icons.css">
-    <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="../assets/vendor/animate/animate.css">
-    <link rel="stylesheet" type="text/css" href="../assets/vendor/owl-carousel/owl.carousel.css">
-    <link rel="stylesheet" type="text/css" href="../assets/vendor/perfect-scrollbar/css/perfect-scrollbar.css">
-    <link rel="stylesheet" type="text/css" href="../assets/vendor/nice-select/css/nice-select.css">
-    <link rel="stylesheet" type="text/css" href="../assets/vendor/fancybox/css/jquery.fancybox.min.css">
-    <link rel="stylesheet" type="text/css" href="../assets/css/virtual.css">
-    <link rel="stylesheet" type="text/css" href="../assets/css/minibar.virtual.css">
-    <link rel="stylesheet" type="text/css" href="../assets/vendor/2ndPages.css">
-
-    <style>
-        .project-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 2rem;
-        }
-
-        h1 {
-            color: #7044C1;
-            font-size: 3rem;
-            margin-bottom: 2rem;
-            text-align: center;
-            font-weight: bold;
-        }
-
-        h2 {
-            color: #5833A6;
-            margin-top: 2rem;
-            margin-bottom: 1rem;
-        }
-
-        .project-description {
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 15px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-            margin-bottom: 2rem;
-        }
-
-        .features-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 1.5rem;
-            margin: 2rem 0;
-        }
-
-        .feature-card {
-            background: white;
-            padding: 1.5rem;
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-            transition: transform 0.3s ease;
-        }
-
-        .feature-card:hover {
-            transform: translateY(-5px);
-        }
-
-        .github-link {
-            display: inline-block;
-            padding: 1rem 2rem;
-            background: #7044C1;
-            color: white;
-            text-decoration: none;
-            border-radius: 30px;
-            margin-top: 2rem;
-            transition: all 0.3s ease;
-        }
-
-        .github-link:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 5px 15px rgba(112, 68, 193, 0.3);
-        }
-    </style>
+    <link rel="shortcut icon" href="../assets/favicon.ico">
+    <link rel="stylesheet" href="../assets/css/themify-icons.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap.css">
+    <link rel="stylesheet" href="../assets/vendor/animate/animate.css">
+    <link rel="stylesheet" href="../assets/css/virtual.css">
+    <link rel="stylesheet" href="../assets/css/minibar.virtual.css">
+    <link rel="stylesheet" href="../styles.css">
 </head>
 
 <body class="theme-purple">
-
-    <!-- Back to top button -->
     <div class="btn-back_to_top">
         <span class="ti-arrow-up"></span>
     </div>
 
-    <!-- Mini bar -->
     <div class="minibar">
         <div class="header">
             <div class="brand"></div>
@@ -110,11 +38,9 @@
 
     <div class="project-container">
         <h1>Multi-Functional C# Dashboard</h1>
-        
         <div class="project-description">
             <p><strong>Description:</strong> This C# application serves as a versatile dashboard, providing users with quick access to various tools and functionalities.</p>
         </div>
-
         <div class="features-grid">
             <div class="feature-card">
                 <h2>Key Features:</h2>
@@ -140,11 +66,32 @@
             </div>
         </div>
 
-        <h2>GitHub Repository:</h2>
+        <!-- Slider Section -->
+        <div class="slider-container">
+            <div class="slides">
+                <div class="slide"><img src="1.png" alt="Dashboard Feature 1"></div>
+                <div class="slide"><img src="2.png" alt="Dashboard Feature 2"></div>
+                <div class="slide"><img src="3.png" alt="Dashboard Feature 3"></div>
+                <div class="slide"><img src="4.png" alt="Dashboard Feature 4"></div>
+                <div class="slide"><img src="5.png" alt="Dashboard Feature 5"></div>
+                <div class="slide"><img src="6.png" alt="Dashboard Feature 6"></div>
+                <div class="slide"><img src="7.png" alt="Dashboard Feature 7"></div>
+            </div>
+            <button class="nav-btn prev-btn" onclick="prevSlide()">&#10094;</button>
+            <button class="nav-btn next-btn" onclick="nextSlide()">&#10095;</button>
+            <div class="slide-indicators">
+                <div class="indicator active" onclick="goToSlide(0)"></div>
+                <div class="indicator" onclick="goToSlide(1)"></div>
+                <div class="indicator" onclick="goToSlide(2)"></div>
+                <div class="indicator" onclick="goToSlide(3)"></div>
+                <div class="indicator" onclick="goToSlide(4)"></div>
+                <div class="indicator" onclick="goToSlide(5)"></div>
+                <div class="indicator" onclick="goToSlide(6)"></div>
+            </div>
+        </div>
+
         <div class="text-center">
-            <a href="https://github.com/yasserbousrih/Multi_Functional_Csharp_Dashboard" class="github-link">
-                View on GitHub
-            </a>
+            <a href="https://github.com/yasserbousrih/Multi_Functional_Csharp_Dashboard" class="github-link">View on GitHub</a>
         </div>
     </div>
 
