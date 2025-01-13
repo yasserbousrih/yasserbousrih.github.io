@@ -16,9 +16,142 @@
   <link rel="stylesheet" type="text/css" href="../assets/css/virtual.css">
   <link rel="stylesheet" type="text/css" href="../assets/css/minibar.virtual.css">
   <link rel="stylesheet" type="text/css" href="../assets/vendor/2ndPages.css"> 
-  
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+    .project-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    h1 {
+      color: #7044C1;
+      font-size: 3rem;
+      margin-bottom: 2rem;
+      text-align: center;
+      font-weight: bold;
+    }
+    h2 {
+      color: #5833A6;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+    }
+    p {
+      color: #666;
+      line-height: 1.6;
+    }
+    ul {
+      list-style-type: disc;
+      margin-left: 20px;
+    }
+    .project-description {
+      background: #f8f9fa;
+      padding: 2rem;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      margin-bottom: 2rem;
+    }
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+      margin: 2rem 0;
+    }
+    .feature-card {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease;
+    }
+    .feature-card:hover {
+      transform: translateY(-5px);
+    }
+    .github-link {
+      display: inline-block;
+      padding: 1rem 2rem;
+      background: #7044C1;
+      color: white;
+      text-decoration: none;
+      border-radius: 30px;
+      margin-top: 2rem;
+      transition: all 0.3s ease;
+    }
+    .github-link:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 5px 15px rgba(112, 68, 193, 0.3);
+    }
+    .slider-container {
+      position: relative;
+      max-width: 1000px;
+      margin: 3rem auto;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    }
+    .slides {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+      height: 500px;
+    }
+    .slide {
+      min-width: 100%;
+      position: relative;
+    }
+    .slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .nav-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(112, 68, 193, 0.8);
+      color: white;
+      padding: 1rem 1.5rem;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      font-size: 1.2rem;
+      transition: all 0.3s ease;
+      z-index: 10;
+    }
+    .nav-btn:hover {
+      background: #7044C1;
+      transform: translateY(-50%) scale(1.1);
+    }
+    .prev-btn {
+      left: 20px;
+    }
+    .next-btn {
+      right: 20px;
+    }
+    .slide-indicators {
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 10px;
+      z-index: 10;
+    }
+    .indicator {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.5);
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    .indicator.active {
+      background: #7044C1;
+      transform: scale(1.2);
+    }
+  </style>
 </head>
-<body class="theme-blue">
+<body class="theme-purple">
   
 
   <!-- Mini bar -->
@@ -40,57 +173,153 @@
     </div>
   </div>
   
-  <div class="container">
-    <h1>Sakura Sushi Website</h1>
-    <p>Description: The Sakura Sushi Website is a responsive web application developed for a fictional sushi restaurant. The website provides users with a menu of sushi items and allows them to place orders online. It features a clean and user-friendly interface designed to enhance the user experience.</p>
+  <div class="project-container">
+    <h1 class="wow fadeInDown">Sakura Sushi</h1>
     
-    <h2>Key Features:</h2>
-    <ul>
-      <li>Menu Display: The website displays a variety of sushi items with images, descriptions, and prices.</li>
-      <li>Order Placement: Users can add items to their cart and place orders.</li>
-      <li>Customer Information Form: A form is provided for users to enter their first name, last name, and other required information for order processing.</li>
-      <li>Order Summary: A summary of the order is displayed before submission, including the total cost.</li>
-      <li>Confirmation Message: After placing an order, users receive a confirmation message thanking them for their order.</li>
-      <li>Responsive Design: The website is designed to be responsive, ensuring a seamless experience across various devices and screen sizes.</li>
-    </ul>
-    
-    <h2>Technologies Used:</h2>
-    <ul>
-      <li>Frontend: HTML, CSS, JavaScript</li>
-      <li>Backend: Local Storage for data persistence</li>
-      <li>Development Tools: Visual Studio Code, Git</li>
-    </ul>
+    <div class="project-description wow fadeIn">
+        <p><strong>Description:</strong> Sakura Sushi is an online platform for sushi lovers, offering a wide variety of sushi dishes, customizable orders, and a seamless ordering experience.</p>
+    </div>
 
-    
+    <div class="features-grid wow fadeInUp">
+        <div class="feature-card">
+            <h2>Key Features:</h2>
+            <ul>
+                <li>Menu Display with images and details</li>
+                <li>Customizable Sushi Orders</li>
+                <li>Secure Payment Processing</li>
+                <li>User Profile Management</li>
+                <li>Order Tracking System</li>
+                <li>Customer Feedback System</li>
+            </ul>
+        </div>
+        <div class="feature-card">
+            <h2>Technologies Used:</h2>
+            <ul>
+                <li>Frontend: HTML, CSS, JavaScript</li>
+                <li>Backend: Node.js</li>
+                <li>Database: MongoDB</li>
+                <li>Development Tools: VS Code, Git</li>
+            </ul>
+        </div>
+        <div class="feature-card">
+            <h2>Challenges Overcome:</h2>
+            <ul>
+                <li>Implementing responsive design</li>
+                <li>Real-time order tracking</li>
+                <li>Secure payment integration</li>
+                <li>Menu customization system</li>
+            </ul>
+        </div>
+    </div>
 
-    <div class="row justify-content-center mt-5 wow fadeInUp">
-      <div class="container">
-          
-          <div class="slider">
-              <div class="slides">
-                  <div class="slide">
-                      <img src="1.png" alt="Image 1">
-                  </div>
-                  <div class="slide">
-                      <img src="2.png" alt="Image 2">
-                  </div>
-                  <div class="slide">
-                      <img src="3.png" alt="Image 3">
-                  </div>
-                  
-              </div>
+    <div class="slider-container wow fadeInUp">
+        <div class="slides">
+            <div class="slide">
+                <img src="1.png" alt="Image 1">
+            </div>
+            <div class="slide">
+                <img src="2.png" alt="Image 2">
+            </div>
+            <div class="slide">
+                <img src="3.png" alt="Image 3">
+            </div>
+        </div>
 
-              <div class="navigation">
-                  <button class="nav-btn prev-btn" onclick="prevSlide()">&#10094;</button>
-                  <button class="nav-btn next-btn" onclick="nextSlide()">&#10095;</button>
-              </div>
-          </div>
-      </div>
+        <button class="nav-btn prev-btn">❮</button>
+        <button class="nav-btn next-btn">❯</button>
 
-    <h2>GitHub Repository:</h2>
-    <p><a href="https://github.com/yasserbousrih/Sakura-Sushi-Website">GitHub - Sakura Sushi Website</a></p>
+        <div class="slide-indicators">
+            <span class="indicator active"></span>
+            <span class="indicator"></span>
+            <span class="indicator"></span>
+        </div>
+    </div>
+
+    <div class="project-description wow fadeIn">
+        <h2>Outcome:</h2>
+        <p>Sakura Sushi provides a seamless platform for sushi enthusiasts to explore and order their favorite dishes. The website's intuitive interface, combined with secure payment processing and real-time order tracking, creates an exceptional dining experience for customers.</p>
+    </div>
+
+    <div class="text-center">
+        <a href="https://github.com/yourusername/SakuraSushi" class="github-link wow fadeInUp">
+            View on GitHub
+        </a>
+    </div>
   </div>
   <script src="../assets/js/workdisplay.js" defer></script>
 
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      let currentSlide = 0;
+      const slides = document.querySelectorAll('.slide');
+      const indicators = document.querySelectorAll('.indicator');
+      let slideInterval;
+
+      // Initialize the slideshow
+      function initSlideshow() {
+        // Set initial position
+        updateSlides();
+        // Start auto-sliding
+        startSlideInterval();
+      }
+
+      function updateSlides() {
+        // Update slide position
+        const slidesContainer = document.querySelector('.slides');
+        slidesContainer.style.transform = `translateX(-${currentSlide * 100}%)`;
+        
+        // Update indicators
+        indicators.forEach((indicator, index) => {
+          indicator.classList.toggle('active', index === currentSlide);
+        });
+      }
+
+      function nextSlide() {
+        currentSlide = (currentSlide + 1) % slides.length;
+        updateSlides();
+        resetSlideInterval();
+      }
+
+      function prevSlide() {
+        currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+        updateSlides();
+        resetSlideInterval();
+      }
+
+      function goToSlide(index) {
+        currentSlide = index;
+        updateSlides();
+        resetSlideInterval();
+      }
+
+      function startSlideInterval() {
+        slideInterval = setInterval(nextSlide, 5000);
+      }
+
+      function resetSlideInterval() {
+        clearInterval(slideInterval);
+        startSlideInterval();
+      }
+
+      // Add event listeners
+      document.querySelector('.next-btn').addEventListener('click', nextSlide);
+      document.querySelector('.prev-btn').addEventListener('click', prevSlide);
+      
+      indicators.forEach((indicator, index) => {
+        indicator.addEventListener('click', () => goToSlide(index));
+      });
+
+      // Initialize slideshow
+      initSlideshow();
+
+      // Pause auto-sliding when hovering over the slider
+      const sliderContainer = document.querySelector('.slider-container');
+      sliderContainer.addEventListener('mouseenter', () => clearInterval(slideInterval));
+      sliderContainer.addEventListener('mouseleave', startSlideInterval);
+    });
+
+    // Initialize WOW.js
+    new WOW().init();
+  </script>
 </body>
 </html>

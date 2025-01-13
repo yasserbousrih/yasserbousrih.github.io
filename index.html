@@ -29,6 +29,95 @@
   <link rel="stylesheet" type="text/css" href="../assets/css/virtual.css">
   
   <link rel="stylesheet" type="text/css" href="../assets/css/minibar.virtual.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+  <style>
+    /* Initialize WOW.js */
+    <script>
+        new WOW().init();
+    </script>
+
+    .skills-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .skill-section {
+        margin-bottom: 40px;
+        background: #ffffff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    .skill-section h2 {
+        color: #333333;
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+        border-bottom: 3px solid #7044C1;
+    }
+
+    .skill-category {
+        margin-bottom: 25px;
+    }
+
+    .skill-category h3 {
+        color: #333333;
+        margin-bottom: 15px;
+        font-size: 1.1em;
+    }
+
+    .skill-items {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .skill-tag {
+        background-color: #7044C1; /* Main purple */
+        color: white;
+        padding: 8px 16px;
+        border-radius: 20px;
+        font-size: 14px;
+        transition: all 0.3s ease;
+        border: none;
+    }
+
+    .skill-tag:hover {
+        background-color: #f5f5f5; /* Light grey */
+        color: #333333; /* Dark grey text */
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Animation duration */
+    .wow {
+        visibility: hidden;
+    }
+
+    .caption {
+        animation-duration: 1s;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        .skills-container {
+            padding: 10px;
+        }
+        
+        .skill-section {
+            padding: 15px;
+        }
+        
+        .skill-tag {
+            font-size: 13px;
+            padding: 6px 12px;
+        }
+    }
+  </style>
 </head>
 <body class="theme-purple">
   
@@ -106,9 +195,10 @@
           <div class="col-md-6">
             <div class="caption wow fadeInRight">
               <h2 class="fg-dark">Yasser Bousrih</h2>
-              <p class="fg-theme fw-medium">Web & Software Developer </p>
-              <p>A young aspiring software and web developer with a solid background.
-                I have a passion for creating and learning new things.</p>
+              <p class="fg-theme fw-medium">Full Stack Developer </p>
+              <p>A passionate Full Stack Developer who transforms ideas into elegant digital solutions. 
+                With a keen eye for detail and a drive for innovation, I specialize in building 
+                scalable web applications that make a difference.</p>
               <ul class="theme-list">
                 <li class="fg-dark"><b>From:</b> Monastir, Tunisia</li>
                 <li class="fg-dark"><b>Lives In:</b> Montreal, Canada</li>
@@ -121,101 +211,150 @@
         </div>
       </div> <!-- End profile -->
        <!-- Skills -->
-  <div class="container mt-5 text-center">
-    <h1 class="fg-dark wow fadeInUp">My Skills</h1>
-    <div class="row py-3">
-      <div class="col-md-6">
-        <h4 class="wow fadeInUp">Coding skills</h4>
-        <div class="progress-wrapper wow fadeInUp">
-          <span class="caption">C#</span>
-          <div class="progress">
-            <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-          </div>
+  <div class="skills-container">
+    <!-- Frontend Development -->
+    <div class="caption wow zoomInUp">
+        <div class="skill-section">
+            <h2>Frontend Development</h2>
+            <div class="skill-category">
+                <h3>Programming Languages</h3>
+                <div class="skill-items">
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">TypeScript</span>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3>Frameworks & Libraries</h3>
+                <div class="skill-items">
+                    <span class="skill-tag">React</span>
+                    <span class="skill-tag">React Native</span>
+                </div>
+            </div>
         </div>
-        <div class="progress-wrapper wow fadeInUp">
-          <span class="caption">JavaScript+ PHP </span>
-          <div class="progress">
-            <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-          </div>
-        </div>
-        <div class="progress-wrapper wow fadeInUp">
-          <span class="caption"> HTML + CSS</span>
-          <div class="progress">
-            <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-          </div>
-        </div>
-        <div class="progress-wrapper wow fadeInUp">
-          <span class="caption">Python</span>
-          <div class="progress">
-            <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
-          </div>
-        </div>
-        <div class="progress-wrapper wow fadeInUp">
-          <span class="caption">Java</span>
-          <div class="progress">
-            <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-          </div>
-        </div>
-        <div class="progress-wrapper wow fadeInUp">
-          <span class="caption">SQL</span>
-          <div class="progress">
-            <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
-          </div>
-        </div>
-        <div class="progress-wrapper wow fadeInUp">
-          <span class="caption">Swift</span>
-          <div class="progress">
-            <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-          </div>
-        </div>
-        <div class="progress-wrapper wow fadeInUp">
-          <span class="caption">Linux</span>
-          <div class="progress">
-            <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
-          </div>
-        </div>
-        <div class="progress-wrapper wow fadeInUp">
-          <span class="caption">Node.js</span>
-          <div class="progress">
-            <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <h4 class="wow fadeInUp">Design Skills</h4>
-        <div class="progress-wrapper wow fadeInUp">
-          <span class="caption">Photo shop</span>
-          <div class="progress">
-            <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-          </div>
-        </div>
-        <div class="progress-wrapper wow fadeInUp">
-          <span class="caption">Web Design</span>
-          <div class="progress">
-            <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-          </div>
-        </div>
-        <div class="progress-wrapper wow fadeInUp">
-          <span class="caption">Logo Design</span>
-          <div class="progress">
-            <div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-          </div>
-        </div>
-        <div class="progress-wrapper wow fadeInUp">
-          <span class="caption">App Design</span>
-          <div class="progress">
-            <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-          </div>
-        </div>
-        <div class="progress-wrapper wow fadeInUp">
-          <span class="caption">User Interface Design</span>
-          <div class="progress">
-            <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
-          </div>
-        </div>
-      </div>
     </div>
-  </div> 
+
+    <!-- Backend Development -->
+    <div class="caption wow zoomInUp">
+        <div class="skill-section">
+            <h2>Backend Development</h2>
+            <div class="skill-category">
+                <h3>Programming Languages</h3>
+                <div class="skill-items">
+                    <span class="skill-tag">Java</span>
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">C#</span>
+                    <span class="skill-tag">Go</span>
+                    <span class="skill-tag">PHP</span>
+                    <span class="skill-tag">Swift</span>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3>Frameworks & Libraries</h3>
+                <div class="skill-items">
+                    <span class="skill-tag">Node.js</span>
+                    <span class="skill-tag">Express.js</span>
+                    <span class="skill-tag">Spring Boot</span>
+                    <span class="skill-tag">Hibernate</span>
+                    <span class="skill-tag">Django</span>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3>Databases</h3>
+                <div class="skill-items">
+                    <span class="skill-tag">PostgreSQL</span>
+                    <span class="skill-tag">MongoDB</span>
+                    <span class="skill-tag">MySQL</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cloud & Infrastructure -->
+    <div class="caption wow zoomInUp">
+        <div class="skill-section">
+            <h2>Cloud & Infrastructure</h2>
+            <div class="skill-category">
+                <h3>Cloud Platforms & Tools</h3>
+                <div class="skill-items">
+                    <span class="skill-tag">Firebase</span>
+                    <span class="skill-tag">Google Cloud Platform (GCP)</span>
+                    <span class="skill-tag">CI/CD Pipelines</span>
+                    <span class="skill-tag">Jenkins</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Development Tools & Practices -->
+    <div class="caption wow zoomInUp">
+        <div class="skill-section">
+            <h2>Development Tools & Practices</h2>
+            <div class="skill-items">
+                <span class="skill-tag">Git</span>
+                <span class="skill-tag">Postman</span>
+                <span class="skill-tag">API Integration</span>
+                <span class="skill-tag">Unit Testing</span>
+                <span class="skill-tag">Debugging and Troubleshooting</span>
+                <span class="skill-tag">Scalable System Design</span>
+                <span class="skill-tag">Multithreading and Concurrent Programming</span>
+                <span class="skill-tag">Role-Based Access Control (RBAC)</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Testing & Security -->
+    <div class="caption wow zoomInUp">
+        <div class="skill-section">
+            <h2>Testing & Security</h2>
+            <div class="skill-category">
+                <h3>Testing and Quality Assurance</h3>
+                <div class="skill-items">
+                    <span class="skill-tag">Test-Driven Development (TDD)</span>
+                    <span class="skill-tag">Manual Testing</span>
+                    <span class="skill-tag">Automated Testing</span>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3>Security</h3>
+                <div class="skill-items">
+                    <span class="skill-tag">Password Hashing (bcrypt)</span>
+                    <span class="skill-tag">JWT-based Session Management</span>
+                    <span class="skill-tag">User Authentication and Authorization</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Application Features -->
+    <div class="caption wow zoomInUp">
+        <div class="skill-section">
+            <h2>Application Features</h2>
+            <div class="skill-items">
+                <span class="skill-tag">User Registration and Login</span>
+                <span class="skill-tag">Password Reset</span>
+                <span class="skill-tag">Payment System Integration</span>
+                <span class="skill-tag">Calendar and Booking Systems</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Additional Skills -->
+    <div class="caption wow zoomInUp">
+        <div class="skill-section">
+            <h2>Additional Skills</h2>
+            <div class="skill-items">
+                <span class="skill-tag">French (Conversational)</span>
+                <span class="skill-tag">RESTful API Development</span>
+                <span class="skill-tag">Event Streaming Foundations</span>
+                <span class="skill-tag">Frontend and Backend Collaboration</span>
+            </div>
+        </div>
+    </div>
+</div>
       <div class="container pt-5">
         <div class="row">
           <div class="col-md-6 wow fadeInRight">

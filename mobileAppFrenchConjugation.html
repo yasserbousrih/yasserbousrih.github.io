@@ -1,58 +1,214 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>iOS App for French Verb Conjugation</title>
-  <link rel="stylesheet" type="text/css" href="../assets/css/themify-icons.css">
-  <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.css">
-  <link rel="stylesheet" type="text/css" href="../assets/css/minibar.virtual.css">
-  <link rel="stylesheet" type="text/css" href="../assets/vendor/2ndPages.css"> 
-  
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>French Verb Conjugation</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="../assets/css/themify-icons.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../assets/vendor/animate/animate.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/virtual.css">
+    <link rel="stylesheet" type="text/css" href="../assets/vendor/2ndPages.css">
+
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .project-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #7044C1;
+            font-size: 3rem;
+            margin-bottom: 2rem;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        h2 {
+            color: #5833A6;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .project-description {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .feature-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .github-link {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background: #7044C1;
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            margin-top: 2rem;
+            transition: all 0.3s ease;
+        }
+
+        .github-link:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(112, 68, 193, 0.3);
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        ul li {
+            padding: 0.5rem 0;
+            position: relative;
+            padding-left: 1.5rem;
+        }
+
+        ul li:before {
+            content: "•";
+            color: #7044C1;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+
+        .minibar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: auto;
+            height: auto;
+            background: transparent;
+            z-index: 1000;
+        }
+
+        .menu-link {
+            display: flex;
+            align-items: center;
+            padding: 15px 25px;
+            background: rgba(52, 58, 64, 0.9);
+            border-radius: 0 0 10px 0;
+            color: white;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .menu-link:hover {
+            background: #212529;
+            color: white;
+        }
+
+        .menu-link .icon {
+            margin-right: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .project-container {
+                padding: 1rem;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
 </head>
-<body class="theme-green">
 
-
-
-<!-- Mini bar -->
-<div class="minibar">
-  <div class="header">
-    <div class="brand"></div>
-  </div>
-  <div class="content">
-    <ul class="main-menu">
-      <li class="menu-item active">
-        <a href="index.html#portfolio" class="menu-link">
-          <span class="icon ti-arrow-left"></span>
-          <span class="caption">Back</span>
+<body class="theme-purple">
+    <div class="minibar">
+        <a href="../index.html#portfolio" class="menu-link">
+            <span class="icon ti-arrow-left"></span>
+            <span class="caption">Back</span>
         </a>
-      </li>
-    </ul>
-  </div>
-</div>
+    </div>
 
-<div class="container">
-  <h1>iOS App for French Verb Conjugation</h1>
-  <p><strong>Description:</strong> Created an iOS app using Swift that utilizes an API for French verb conjugation. The app provides a user-friendly interface for conjugating French verbs, making language learning more accessible.</p>
-  
-  <h2>Tech:</h2>
-  <ul>
-    <li>Swift: The core language used for iOS app development.</li>
-    <li>iOS Development: Used for developing the iOS app.</li>
-    <li>API Integration: Integrated an API for French verb conjugation.</li>
-  </ul>
-  
-  <h2>Achievements:</h2>
-  <ul>
-    <li>Developed an intuitive iOS app for learning and practicing French verb conjugation.</li>
-    <li>Integrated a reliable API for accurate and up-to-date verb conjugation information.</li>
-    <li>Received positive user feedback for the app's simplicity and effectiveness in language learning.</li>
-  </ul>
+    <div class="project-container">
+        <h1 class="wow fadeInDown">French Verb Conjugation iOS App</h1>
+        
+        <div class="project-description wow fadeIn">
+            <p><strong>Description:</strong> An iOS application designed to help users learn and practice French verb conjugations. The app provides an intuitive interface for conjugating verbs in different tenses and includes features for learning and testing conjugation skills.</p>
+        </div>
 
-  <h2>GitHub Repository:</h2>
-  <p><a href="https://github.com/yasserbousrih/iOS-App-for-French-Verb-Conjugation">GitHub - iOS App for French Verb Conjugation</a></p>
-</div>
+        <div class="features-grid wow fadeInUp">
+            <div class="feature-card">
+                <h2>Key Features:</h2>
+                <ul>
+                    <li>Comprehensive verb database</li>
+                    <li>Multiple conjugation tenses</li>
+                    <li>Practice exercises and quizzes</li>
+                    <li>Progress tracking</li>
+                    <li>Offline functionality</li>
+                    <li>Pronunciation guides</li>
+                </ul>
+            </div>
+            <div class="feature-card">
+                <h2>Technologies Used:</h2>
+                <ul>
+                    <li>Swift programming language</li>
+                    <li>UIKit framework</li>
+                    <li>Core Data for storage</li>
+                    <li>AVFoundation for audio</li>
+                    <li>XCode IDE</li>
+                    <li>Git for version control</li>
+                </ul>
+            </div>
+            <div class="feature-card">
+                <h2>Challenges Overcome:</h2>
+                <ul>
+                    <li>Complex conjugation algorithms</li>
+                    <li>Efficient data storage</li>
+                    <li>User interface optimization</li>
+                    <li>Audio integration</li>
+                    <li>Performance optimization</li>
+                </ul>
+            </div>
+        </div>
 
+        <div class="project-description wow fadeIn">
+            <h2>Outcome:</h2>
+            <p>The French Verb Conjugation app successfully provides a comprehensive tool for learning and practicing French verb conjugations. With its user-friendly interface, extensive verb database, and interactive learning features, it helps users master French verb conjugations effectively. The app has received positive feedback for its intuitive design and educational value.</p>
+        </div>
+
+        <div class="text-center">
+            <a href="https://github.com/yourusername/FrenchVerbConjugation" class="github-link wow fadeInUp">
+                View on GitHub
+            </a>
+        </div>
+    </div>
+
+    <script src="../assets/js/jquery-3.5.1.min.js"></script>
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/vendor/wow/wow.min.js"></script>
+    <script src="../assets/js/workdisplay.js" defer></script>
+
+    <script>
+        new WOW().init();
+    </script>
 </body>
 </html>
