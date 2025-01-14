@@ -185,8 +185,6 @@
         gap: 1.5rem;
         padding: 1.5rem;
         width: 100%;
-        max-width: none;
-        margin: 0;
     }
 
     .grid-item {
@@ -216,11 +214,6 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
-        transition: transform 0.3s ease;
-    }
-
-    .img-place:hover img {
-        transform: scale(1.05);
     }
 
     .img-caption {
@@ -399,6 +392,124 @@
         .form-control {
             padding: 12px;
             margin-bottom: 20px;
+        }
+    }
+
+    /* Also update the container to be full width */
+    .vg-page.page-portfolio .container {
+        max-width: 98%;
+        margin: 0 auto;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .gridder {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 1.5rem;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .grid-item {
+        width: 100%;
+        transition: transform 0.3s ease;
+    }
+
+    .img-place {
+        position: relative;
+        height: 250px;
+        background: #f8f9fa;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    .img-place img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+        .gridder {
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+        
+        .vg-page.page-portfolio .container {
+            max-width: 100%;
+            padding: 0 0.5rem;
+        }
+    }
+
+    @media (min-width: 1400px) {
+        .gridder {
+            grid-template-columns: repeat(6, 1fr);
+        }
+    }
+
+    @media (min-width: 1800px) {
+        .gridder {
+            grid-template-columns: repeat(7, 1fr);
+        }
+    }
+
+    /* Reset container styles */
+    .vg-page.page-portfolio {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .vg-page.page-portfolio .container {
+        max-width: 100%;
+        margin: 0;
+        padding: 0 1rem;
+    }
+
+    .gridder {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 1.5rem;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .grid-item {
+        width: 100%;
+        transition: transform 0.3s ease;
+    }
+
+    .img-place {
+        position: relative;
+        height: 250px;
+        background: #f8f9fa;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    .img-place img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+        .gridder {
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+    }
+
+    @media (min-width: 1400px) {
+        .gridder {
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
         }
     }
   </style>
@@ -786,7 +897,6 @@
           </div>
         </div>
       </div>
-      
 
       <div class="grid-item web wow zoomIn">
         <div class="img-place">
@@ -795,6 +905,17 @@
             <h5 class="fg-theme">Grocery To Go</h5>
             <p>E-Commerce website.</p>
             <a href="WebGroceryToGo/WebGroceryToGo.html" class="btn btn-theme btn-rounded" id="btnGrocerytogo">Read More</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid-item web wow zoomIn">
+        <div class="img-place">
+          <img src="../assets/img/work/jamyelaluna.png" alt="">
+          <div class="img-caption">
+            <h5 class="fg-theme">Jamye La Luna Productions</h5>
+            <p>A responsive React website .</p>
+            <a href="Jamye La Luna Productions/JamyeLaLunaProductions.html" class="btn btn-theme btn-rounded" id="btnsushi">Read More</a>
           </div>
         </div>
       </div>
@@ -832,8 +953,6 @@
         </div>
       </div>
 
-      
-
       <div class="grid-item java wow zoomIn">
         <div class="img-place">
           <img src="../assets/img/work/logojava.jpg" alt="">
@@ -866,31 +985,7 @@
           </div>
         </div>
       </div>
-
-      <div class="grid-item web wow zoomIn">
-        <div class="img-place">
-          <img src="../assets/img/work/logoSushi.png" alt="">
-          <div class="img-caption">
-            <h5 class="fg-theme">Sakura Sushi Website</h5>
-            <p>A responsive sushi website .</p>
-            <a href="WebSakuraSushi/WebSakuraSushi.html" class="btn btn-theme btn-rounded" id="btnsushi">Read More</a>
-          </div>
-        </div>
-      </div>
-      <div class="grid-item web wow zoomIn">
-        <div class="img-place">
-          <img src="../assets/img/work/jamyelaluna.png" alt="">
-          <div class="img-caption">
-            <h5 class="fg-theme">Jamye La Luna Productions</h5>
-            <p>A responsive React website .</p>
-            <a href="Jamye La Luna Productions/JamyeLaLunaProductions.html" class="btn btn-theme btn-rounded" id="btnsushi">Read More</a>
-          </div>
-        </div>
-      </div>
     </div> <!-- End gridder -->
-  </div>
-</div>
-
   </div>
 </div> <!-- End Portfolio page -->
 
