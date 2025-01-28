@@ -43,6 +43,7 @@
         max-width: 1200px;
         margin: 0 auto;
         padding: 20px;
+        padding-top: 50px;
     }
 
     .skill-section {
@@ -58,6 +59,7 @@
         margin-bottom: 20px;
         padding-bottom: 10px;
         border-bottom: 3px solid #7044C1;
+        font-size: 1.8em;
     }
 
     .skill-category {
@@ -67,7 +69,7 @@
     .skill-category h3 {
         color: #333333;
         margin-bottom: 15px;
-        font-size: 1.1em;
+        font-size: 1.3em;
     }
 
     .skill-items {
@@ -512,6 +514,17 @@
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
         }
     }
+
+    .badge.badge-subhead {
+        font-size: 1.2em;
+        padding: 8px 20px;
+        margin-bottom: 15px;
+    }
+
+    .text-center h1 {
+        font-size: 2.5em;
+        margin-bottom: 30px;
+    }
   </style>
 </head>
 <body class="theme-purple">
@@ -605,151 +618,232 @@
           </div>
         </div>
       </div> <!-- End profile -->
-       <!-- Skills -->
-  <div class="skills-container">
-    <!-- Frontend Development -->
-    <div class="caption wow fadeInRight">
-        <div class="skill-section">
-            <h2>Frontend Development</h2>
-            <div class="skill-category">
-                <h3>Programming Languages</h3>
-                <div class="skill-items">
-                    <span class="skill-tag">JavaScript</span>
-                    <span class="skill-tag">TypeScript</span>
+      <div style="padding: 50px;"></div> <!-- Added padding -->
+      <!-- Skills -->
+      <div class="container">
+        <h1 class="text-center fw-normal wow fadeInUp">My Skills</h1>
+      </div>
+      <div class="skills-container">
+        <!-- Frontend Development -->
+        <div class="caption wow fadeInRight">
+            <div class="skill-section">
+                <h2>Frontend Development</h2>
+                <div class="skill-category">
+                    <h3>Languages</h3>
+                    <div class="skill-items">
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">TypeScript</span>
+                        <span class="skill-tag">HTML5</span>
+                        <span class="skill-tag">CSS3</span>
+                    </div>
                 </div>
-            </div>
-
-            <div class="skill-category">
-                <h3>Frameworks & Libraries</h3>
-                <div class="skill-items">
-                    <span class="skill-tag">React</span>
-                    <span class="skill-tag">React Native</span>
+                <div class="skill-category">
+                    <h3>Frameworks & Libraries</h3>
+                    <div class="skill-items">
+                        <span class="skill-tag">React.js</span>
+                        <span class="skill-tag">Vue.js</span>
+                        <span class="skill-tag">React Native</span>
+                        <span class="skill-tag">Flutter</span>
+                        <span class="skill-tag">Bootstrap</span>
+                        <span class="skill-tag">jQuery</span>
+                    </div>
                 </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Backend Development -->
-    <div class="caption wow fadeInRight">
-        <div class="skill-section">
-            <h2>Backend Development</h2>
-            <div class="skill-category">
-                <h3>Programming Languages</h3>
-                <div class="skill-items">
-                    <span class="skill-tag">Java</span>
-                    <span class="skill-tag">Python</span>
-                    <span class="skill-tag">C#</span>
-                    <span class="skill-tag">Go</span>
-                    <span class="skill-tag">PHP</span>
-                    <span class="skill-tag">Swift</span>
-                </div>
-            </div>
-
-            <div class="skill-category">
-                <h3>Frameworks & Libraries</h3>
-                <div class="skill-items">
-                    <span class="skill-tag">Node.js</span>
-                    <span class="skill-tag">Express.js</span>
-                    <span class="skill-tag">Spring Boot</span>
-                    <span class="skill-tag">Hibernate</span>
-                    <span class="skill-tag">Django</span>
-                </div>
-            </div>
-
-            <div class="skill-category">
-                <h3>Databases</h3>
-                <div class="skill-items">
-                    <span class="skill-tag">PostgreSQL</span>
-                    <span class="skill-tag">MongoDB</span>
-                    <span class="skill-tag">MySQL</span>
+                <div class="skill-category">
+                    <h3>Tools</h3>
+                    <div class="skill-items">
+                        <span class="skill-tag">Redux</span>
+                        <span class="skill-tag">Context API</span>
+                        <span class="skill-tag">Styled Components</span>
+                        <span class="skill-tag">Tailwind CSS</span>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <!-- Cloud & Infrastructure -->
-    <div class="caption wow fadeInRight">
-        <div class="skill-section">
-            <h2>Cloud & Infrastructure</h2>
-            <div class="skill-category">
-                <h3>Cloud Platforms & Tools</h3>
+        <!-- Backend Development -->
+        <div class="caption wow fadeInRight">
+            <div class="skill-section">
+                <h2>Backend Development</h2>
+                <div class="skill-category">
+                    <h3>Languages</h3>
+                    <div class="skill-items">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Go</span>
+                        <span class="skill-tag">C#</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">PHP</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Frameworks & Libraries</h3>
+                    <div class="skill-items">
+                        <span class="skill-tag">Node.js (Express, NestJS)</span>
+                        <span class="skill-tag">Django</span>
+                        <span class="skill-tag">ASP.NET MVC</span>
+                        <span class="skill-tag">Entity Framework</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Databases -->
+        <div class="caption wow fadeInRight">
+            <div class="skill-section">
+                <h2>Databases</h2>
+                <div class="skill-category">
+                    <h3>Relational Databases</h3>
+                    <div class="skill-items">
+                        <span class="skill-tag">PostgreSQL</span>
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">Microsoft SQL Server</span>
+                        <span class="skill-tag">Oracle</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>NoSQL Databases</h3>
+                    <div class="skill-items">
+                        <span class="skill-tag">MongoDB</span>
+                        <span class="skill-tag">Firebase</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Development -->
+        <div class="caption wow fadeInRight">
+            <div class="skill-section">
+                <h2>Mobile Development</h2>
+                <div class="skill-category">
+                    <h3>Platforms</h3>
+                    <div class="skill-items">
+                        <span class="skill-tag">iOS (Swift)</span>
+                        <span class="skill-tag">Android (Java)</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Cross-Platform Frameworks</h3>
+                    <div class="skill-items">
+                        <span class="skill-tag">React Native</span>
+                        <span class="skill-tag">Flutter</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- DevOps & CI/CD -->
+        <div class="caption wow fadeInRight">
+            <div class="skill-section">
+                <h2>DevOps & CI/CD</h2>
                 <div class="skill-items">
-                    <span class="skill-tag">Firebase</span>
-                    <span class="skill-tag">Google Cloud Platform (GCP)</span>
-                    <span class="skill-tag">CI/CD Pipelines</span>
+                    <span class="skill-tag">Git</span>
+                    <span class="skill-tag">GitHub</span>
+                    <span class="skill-tag">GitHub Actions</span>
                     <span class="skill-tag">Jenkins</span>
+                    <span class="skill-tag">Terraform</span>
+                    <span class="skill-tag">Docker</span>
+                    <span class="skill-tag">Kubernetes</span>
+                    <span class="skill-tag">Jest</span>
+                    <span class="skill-tag">Cypress</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Security & Authentication -->
+        <div class="caption wow fadeInRight">
+            <div class="skill-section">
+                <h2>Security & Authentication</h2>
+                <div class="skill-category">
+                    <h3>Technologies</h3>
+                    <div class="skill-items">
+                        <span class="skill-tag">JWT</span>
+                        <span class="skill-tag">OAuth2</span>
+                        <span class="skill-tag">RBAC</span>
+                        <span class="skill-tag">bcrypt</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Practices</h3>
+                    <div class="skill-items">
+                        <span class="skill-tag">Secure Coding</span>
+                        <span class="skill-tag">Encryption</span>
+                        <span class="skill-tag">Authentication Flows</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cloud Services -->
+        <div class="caption wow fadeInRight">
+            <div class="skill-section">
+                <h2>Cloud Services</h2>
+                <div class="skill-category">
+                    <h3>Platforms</h3>
+                    <div class="skill-items">
+                        <span class="skill-tag">AWS (EC2, RDS, S3)</span>
+                        <span class="skill-tag">Firebase</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Services</h3>
+                    <div class="skill-items">
+                        <span class="skill-tag">AWS Lambda</span>
+                        <span class="skill-tag">AWS S3 Storage</span>
+                        <span class="skill-tag">Firebase Authentication</span>
+                        <span class="skill-tag">Firestore</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- APIs & Real-Time Technologies -->
+        <div class="caption wow fadeInRight">
+            <div class="skill-section">
+                <h2>APIs & Real-Time Technologies</h2>
+                <div class="skill-category">
+                    <h3>API Design</h3>
+                    <div class="skill-items">
+                        <span class="skill-tag">RESTful APIs</span>
+                        <span class="skill-tag">GraphQL</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Real-Time Communication</h3>
+                    <div class="skill-items">
+                        <span class="skill-tag">WebSockets</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Methodologies & Practices -->
+        <div class="caption wow fadeInRight">
+            <div class="skill-section">
+                <h2>Methodologies & Practices</h2>
+                <div class="skill-category">
+                    <h3>Development Methodologies</h3>
+                    <div class="skill-items">
+                        <span class="skill-tag">Agile</span>
+                        <span class="skill-tag">Scrum</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Performance Optimization</h3>
+                    <div class="skill-items">
+                        <span class="skill-tag">Code Refactoring</span>
+                        <span class="skill-tag">Caching Strategies</span>
+                        <span class="skill-tag">Query Optimization</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Documentation</h3>
+                    <div class="skill-items">
+                        <span class="skill-tag">Technical Writing</span>
+                        <span class="skill-tag">Comprehensive Documentation</span>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-
-    <!-- Development Tools & Practices -->
-    <div class="caption wow fadeInRight">
-        <div class="skill-section">
-            <h2>Development Tools & Practices</h2>
-            <div class="skill-items">
-                <span class="skill-tag">Git</span>
-                <span class="skill-tag">Postman</span>
-                <span class="skill-tag">API Integration</span>
-                <span class="skill-tag">Unit Testing</span>
-                <span class="skill-tag">Debugging and Troubleshooting</span>
-                <span class="skill-tag">Scalable System Design</span>
-                <span class="skill-tag">Multithreading and Concurrent Programming</span>
-                <span class="skill-tag">Role-Based Access Control (RBAC)</span>
-            </div>
-        </div>
-    </div>
-
-    <!-- Testing & Security -->
-    <div class="caption wow fadeInRight">
-        <div class="skill-section">
-            <h2>Testing & Security</h2>
-            <div class="skill-category">
-                <h3>Testing and Quality Assurance</h3>
-                <div class="skill-items">
-                    <span class="skill-tag">Test-Driven Development (TDD)</span>
-                    <span class="skill-tag">Manual Testing</span>
-                    <span class="skill-tag">Automated Testing</span>
-                </div>
-            </div>
-
-            <div class="skill-category">
-                <h3>Security</h3>
-                <div class="skill-items">
-                    <span class="skill-tag">Password Hashing (bcrypt)</span>
-                    <span class="skill-tag">JWT-based Session Management</span>
-                    <span class="skill-tag">User Authentication and Authorization</span>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Application Features -->
-    <div class="caption wow fadeInRight">
-        <div class="skill-section">
-            <h2>Application Features</h2>
-            <div class="skill-items">
-                <span class="skill-tag">User Registration and Login</span>
-                <span class="skill-tag">Password Reset</span>
-                <span class="skill-tag">Payment System Integration</span>
-                <span class="skill-tag">Calendar and Booking Systems</span>
-            </div>
-        </div>
-    </div>
-
-    <!-- Additional Skills -->
-    <div class="caption wow fadeInRight">
-        <div class="skill-section">
-            <h2>Additional Skills</h2>
-            <div class="skill-items">
-                <span class="skill-tag">French (Conversational)</span>
-                <span class="skill-tag">RESTful API Development</span>
-                <span class="skill-tag">Event Streaming Foundations</span>
-                <span class="skill-tag">Frontend and Backend Collaboration</span>
-            </div>
-        </div>
-    </div>
-</div>
       <div class="container pt-5">
         <div class="row">
           <div class="col-md-6 wow fadeInRight">
