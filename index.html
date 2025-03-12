@@ -33,12 +33,12 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 
-  <style>
-    /* Initialize WOW.js */
-    <script>
-        new WOW().init();
-    </script>
+  <script>
+    // Initialize WOW.js
+    new WOW().init();
+  </script>
 
+  <style>
     .skills-container {
         max-width: 1200px;
         margin: 0 auto;
@@ -182,337 +182,186 @@
     }
 
     .gridder {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-        gap: 1.5rem;
-        padding: 1.5rem;
-        width: 100%;
+        display: grid !important;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)) !important;
+        gap: 5rem 2.5rem !important;
+        width: 100% !important;
     }
 
     .grid-item {
-        width: 100%;
-        transition: transform 0.3s ease;
-    }
-
-    .grid-item:hover {
-        transform: translateY(-5px);
+        width: 100% !important;
+        margin-bottom: 0 !important;
+        max-width: 320px !important;
+        margin: 0 auto !important;
+        justify-self: center !important;
+        padding-bottom: 30px !important;
     }
 
     .img-place {
-        position: relative;
-        height: 250px;
-        background: #f8f9fa;
-        border-radius: 12px;
-        overflow: hidden;
-        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-        transition: box-shadow 0.3s ease;
+        position: relative !important;
+        height: 270px !important;
+        background: #f8f9fa !important;
+        border-radius: 8px !important;
+        overflow: hidden !important;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.15) !important;
+        transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+        max-width: 320px !important;
+        margin-bottom: 10px !important;
     }
 
-    .img-place:hover {
-        box-shadow: 0 8px 25px rgba(0,0,0,0.15);
-    }
-
-    .img-place img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
+    .grid-item:hover .img-place {
+        transform: translateY(-5px) !important;
+        box-shadow: 0 8px 16px rgba(0,0,0,0.2) !important;
     }
 
     .img-caption {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        background: linear-gradient(to top, rgba(0,0,0,0.9), rgba(0,0,0,0.7));
-        padding: 1rem;
-        height: 25%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        position: absolute !important;
+        bottom: 0 !important;
+        left: 0 !important;
+        right: 0 !important;
+        background: linear-gradient(to top, rgba(0,0,0,0.9), rgba(0,0,0,0.6), transparent) !important;
+        padding: 15px !important;
+        transform: translateY(0) !important;
+        transition: transform 0.3s ease !important;
     }
 
     .img-caption h5 {
-        color: #fff;
-        margin: 0;
-        font-size: 1.1rem;
-        line-height: 1.2;
+        color: #fff !important;
+        font-size: 1.1rem !important;
+        margin-bottom: 8px !important;
+        white-space: nowrap !important;
+        overflow: hidden !important;
+        text-overflow: ellipsis !important;
     }
 
     .img-caption p {
-        display: none;
-        color: #ddd;
-        font-size: 0.9rem;
-        margin: 0.5rem 0;
+        display: none !important;
     }
 
     .img-caption .btn {
-        display: none;
-        margin-top: 0.5rem;
-        padding: 0.4rem 1rem;
-        font-size: 0.9rem;
+        padding: 0.3rem 1rem !important;
+        font-size: 0.9rem !important;
     }
 
-    .img-place:hover .img-caption {
-        height: 50%;
-    }
-
-    .img-place:hover .img-caption p,
-    .img-place:hover .img-caption .btn {
-        display: block;
+    /* Show description on hover */
+    .grid-item:hover .img-caption p {
+        display: -webkit-box !important;
+        color: rgba(255,255,255,0.9) !important;
+        font-size: 0.9rem !important;
+        margin-bottom: 10px !important;
+        -webkit-line-clamp: 2 !important;
+        -webkit-box-orient: vertical !important;
+        overflow: hidden !important;
     }
 
     /* Responsive adjustments */
     @media (max-width: 768px) {
         .gridder {
-            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-            gap: 1rem;
-            padding: 1rem;
+            grid-template-columns: repeat(auto-fill, minmax(270px, 1fr)) !important;
+            gap: 4rem 2rem !important;
+        }
+        
+        .img-place {
+            height: 230px !important;
+            max-width: 270px !important;
+        }
+        
+        .grid-item {
+            max-width: 270px !important;
+        }
+    }
+
+    @media (min-width: 992px) {
+        .gridder {
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)) !important;
+        }
+        
+        .grid-item {
+            max-width: 300px !important;
+        }
+        
+        .img-place {
+            max-width: 300px !important;
         }
     }
 
     @media (min-width: 1400px) {
         .gridder {
-            grid-template-columns: repeat(6, 1fr);
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)) !important;
         }
     }
 
     @media (min-width: 1800px) {
         .gridder {
-            grid-template-columns: repeat(7, 1fr);
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)) !important;
         }
     }
 
-    /* Modern Contact Form Styling */
-    .vg-page.page-contact {
-        background: #ffffff;
-        padding: 60px 0;
-    }
-
-    .contact-form {
-        background: white;
-        padding: 40px;
-        border-radius: 20px;
-        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-        transition: all 0.3s ease;
-        border: 1px solid rgba(0,0,0,0.05);
-    }
-
-    .contact-form:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 15px 40px rgba(0,0,0,0.15);
-    }
-
-    .form-control {
-        border: none;
-        border-bottom: 2px solid #e9ecef;
-        border-radius: 8px;
-        padding: 15px;
-        margin-bottom: 25px;
-        transition: all 0.3s ease;
-        background: #f8f9fa;
-        font-size: 16px;
-    }
-
-    .form-control:focus {
-        border-color: var(--theme-color);
-        box-shadow: 0 5px 15px rgba(112, 68, 193, 0.1);
-        background: white;
-        transform: translateY(-2px);
-    }
-
-    .form-control::placeholder {
-        color: #adb5bd;
-        font-size: 0.95rem;
-    }
-
-    textarea.form-control {
-        min-height: 120px;
-        border: 2px solid #e9ecef;
-        resize: vertical;
-    }
-
-    .btn-theme {
-        padding: 12px 30px;
-        border-radius: 50px;
-        border: none;
-        background: var(--theme-color);
-        color: white;
-        font-weight: 600;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        transition: all 0.3s ease;
-        position: relative;
-        overflow: hidden;
-    }
-
-    .btn-theme:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 5px 15px rgba(112, 68, 193, 0.3);
-    }
-
-    .btn-theme:before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: -100%;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(
-            120deg,
-            transparent,
-            rgba(255,255,255,0.3),
-            transparent
-        );
-        transition: 0.5s;
-    }
-
-    .btn-theme:hover:before {
-        left: 100%;
-    }
-
-    /* Animation durations */
-    .wow {
-        visibility: hidden;
-    }
-
-    .fadeInUp {
-        animation-duration: 0.8s;
-    }
-
-    /* Form elements animations */
-    .form-control.wow {
-        animation-duration: 0.5s;
-    }
-
-    /* Responsive adjustments */
-    @media (max-width: 768px) {
-        .contact-form {
-            padding: 25px;
-            margin: 15px;
-        }
-        
-        .form-control {
-            padding: 12px;
-            margin-bottom: 20px;
-        }
-    }
-
-    /* Also update the container to be full width */
+    /* Adjust container to maximize space */
     .vg-page.page-portfolio .container {
-        max-width: 98%;
-        margin: 0 auto;
-        padding-left: 0;
-        padding-right: 0;
+        max-width: 100% !important;
+        padding: 0 15px !important;
+        width: 100% !important;
     }
 
-    .gridder {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-        gap: 1.5rem;
-        width: 100%;
-        padding: 0;
-        margin: 0;
-    }
-
+    /* Center grid items within their cells */
     .grid-item {
-        width: 100%;
-        transition: transform 0.3s ease;
+        margin: 0 auto !important;
+        justify-self: center !important;
     }
 
-    .img-place {
-        position: relative;
-        height: 250px;
-        background: #f8f9fa;
-        border-radius: 12px;
-        overflow: hidden;
-        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    /* Override any other styles that might be interfering */
+    .gridder .grid-item {
+        width: 100% !important;
+        max-width: 320px !important;
+    }
+    
+    .gridder .img-place {
+        height: 270px !important;
+        max-width: 320px !important;
+    }
+    
+    /* Fix for isotope.js which might be overriding our styles */
+    .isotope .grid-item {
+        width: 320px !important;
+        max-width: 320px !important;
+    }
+    
+    /* REMOVE THESE CONFLICTING RULES */
+    /* Additional override for any jQuery plugins */
+    .grid-item, .gridder .grid-item, #portfolio .grid-item {
+        width: 320px !important;
+        max-width: 320px !important;
+    }
+    
+    .img-place, .gridder .img-place, #portfolio .img-place {
+        height: 270px !important;
+        max-width: 320px !important;
     }
 
-    .img-place img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
+    /* Final override to ensure all elements are properly sized */
+    #portfolio .gridder .grid-item {
+        width: 320px !important;
+        max-width: 320px !important;
+    }
+    
+    #portfolio .gridder .img-place {
+        height: 270px !important;
+        max-width: 320px !important;
+    }
+    
+    #portfolio .gridder .img-place img {
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: cover !important;
     }
 
-    /* Responsive adjustments */
-    @media (max-width: 768px) {
-        .gridder {
-            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-            gap: 1rem;
-        }
-        
-        .vg-page.page-portfolio .container {
-            max-width: 100%;
-            padding: 0 0.5rem;
-        }
-    }
-
-    @media (min-width: 1400px) {
-        .gridder {
-            grid-template-columns: repeat(6, 1fr);
-        }
-    }
-
-    @media (min-width: 1800px) {
-        .gridder {
-            grid-template-columns: repeat(7, 1fr);
-        }
-    }
-
-    /* Reset container styles */
-    .vg-page.page-portfolio {
-        width: 100%;
-        padding: 0;
-        margin: 0;
-    }
-
-    .vg-page.page-portfolio .container {
-        max-width: 100%;
-        margin: 0;
-        padding: 0 1rem;
-    }
-
-    .gridder {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-        gap: 1.5rem;
-        width: 100%;
-        padding: 0;
-        margin: 0;
-    }
-
-    .grid-item {
-        width: 100%;
-        transition: transform 0.3s ease;
-    }
-
-    .img-place {
-        position: relative;
-        height: 250px;
-        background: #f8f9fa;
-        border-radius: 12px;
-        overflow: hidden;
-        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    }
-
-    .img-place img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-
-    /* Responsive adjustments */
-    @media (max-width: 768px) {
-        .gridder {
-            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-            gap: 1rem;
-        }
-    }
-
-    @media (min-width: 1400px) {
-        .gridder {
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        }
+    /* Additional fixes to ensure the grid fills the available space */
+    #portfolio .container {
+        max-width: 100% !important;
+        width: 100% !important;
+        padding-left: 30px !important;
+        padding-right: 30px !important;
     }
 
     .badge.badge-subhead {
@@ -941,13 +790,13 @@
 
    
     
-<div class="vg-page page-portfolio" id="portfolio">
-  <div class="container">
+<div class="vg-page page-portfolio" id="portfolio" style="padding-top: 60px; padding-bottom: 80px;">
+  <div class="container" style="max-width: 100% !important; padding: 0 30px !important;">
     <div class="text-center wow fadeInUp">
       <div class="badge badge-subhead">Portfolio</div>
     </div>
     <h1 class="text-center fw-normal wow fadeInUp">See my work</h1>
-    <div class="filterable-button py-3 wow fadeInUp" data-toggle="selected">
+    <div class="filterable-button py-3 wow fadeInUp" data-toggle="selected" style="margin-bottom: 30px;">
       <button class="btn btn-theme-outline selected" data-filter="*">All</button>
       <button class="btn btn-theme-outline" data-filter=".java">Java</button>
       <button class="btn btn-theme-outline" data-filter=".mobileapps">Mobile Apps</button>
@@ -956,7 +805,18 @@
       <button class="btn btn-theme-outline" data-filter=".python">Python</button>
     </div>
 
-    <div class="gridder my-3">
+    <div class="gridder my-3" style="display: grid !important; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)) !important; gap: 9rem 3rem !important; width: 100% !important; padding-top: 30px; padding-bottom: 30px;">
+      <div class="grid-item web wow zoomIn">
+        <div class="img-place">
+          <img src="ResumeRevamp/Resume Revamp.png" alt="">
+          <div class="img-caption">
+            <h5 class="fg-theme">Resume Revamp</h5>
+            <p>A comprehensive job application platform for resume optimization</p>
+            <a href="ResumeRevamp/ResumeRevamp.html" class="btn btn-theme btn-rounded" id="btnResumeRevamp">Read More</a>
+          </div>
+        </div>
+      </div>
+
       <div class="grid-item java wow zoomIn">
         <div class="img-place">
           <img src="../assets/img/work/logojava.jpg" alt="">
@@ -1084,23 +944,78 @@
 
     
 <!-- Page Contact -->
-
-<div class="vg-page page-contact" id="contact">
+<div class="vg-page page-contact" id="contact" style="padding: 80px 0;">
   <div class="container py-5">
     
-    <h1 class="text-center wow fadeInUp fg-theme">Contact Me !</h1>
+    <div class="text-center mb-5">
+      <div class="badge badge-subhead wow fadeInUp">Get In Touch</div>
+      <h1 class="text-center fw-normal wow fadeInUp fg-theme" style="margin-top: 15px; font-size: 2.8em;">Contact Me</h1>
+      <p class="text-center wow fadeInUp" style="max-width: 600px; margin: 20px auto; color: #666;">Have a project in mind or want to discuss a potential collaboration? I'd love to hear from you!</p>
+    </div>
 
     <div class="row justify-content-center">
       
       <div class="col-lg-8">
-        <form action="https://api.web3forms.com/submit" method="POST" class="contact-form wow fadeInUp" data-wow-delay="0.2s" style="max-width: 600px; padding: 30px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); background-color: #f9f9f9; margin: 0 auto;">
+        <form action="https://api.web3forms.com/submit" method="POST" class="contact-form wow fadeInUp" data-wow-delay="0.2s" style="max-width: 700px; padding: 40px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.15); background-color: white; margin: 0 auto; border: 1px solid rgba(112, 68, 193, 0.2);">
           <input type="hidden" name="access_key" value="302b526c-27a7-460c-9cde-c46680d9797f">
-          <input class="form-control form-control-lg mb-3 wow fadeInUp" data-wow-delay="0.3s" type="text" name="name" placeholder="Your Name" style="border-radius: 5px;">
-          <input class="form-control form-control-lg mb-3 wow fadeInUp" data-wow-delay="0.4s" type="email" name="email" placeholder="Email Address" style="border-radius: 5px;">
-          <input class="form-control form-control-lg mb-3 wow fadeInUp" data-wow-delay="0.5s" type="text" name="subject" placeholder="Subject" style="border-radius: 5px;">
-          <textarea class="form-control form-control-lg mb-3 wow fadeInUp" data-wow-delay="0.6s" name="message" rows="6" placeholder="Enter message here.." style="border-radius: 5px;"></textarea>
-          <button type="submit" class="btn btn-theme btn-rounded wow fadeInUp" data-wow-delay="0.7s">Submit</button>
+          
+          <div class="form-group mb-4">
+            <label for="name" style="font-weight: 500; margin-bottom: 8px; color: #444;">Your Name</label>
+            <input id="name" class="form-control form-control-lg wow fadeInUp" data-wow-delay="0.3s" type="text" name="name" placeholder="Enter your name" style="border-radius: 8px; border: 2px solid #eee; padding: 12px 15px; transition: all 0.3s ease; background-color: #f9f9f9;">
+          </div>
+          
+          <div class="form-group mb-4">
+            <label for="email" style="font-weight: 500; margin-bottom: 8px; color: #444;">Email Address</label>
+            <input id="email" class="form-control form-control-lg wow fadeInUp" data-wow-delay="0.4s" type="email" name="email" placeholder="Enter your email" style="border-radius: 8px; border: 2px solid #eee; padding: 12px 15px; transition: all 0.3s ease; background-color: #f9f9f9;">
+          </div>
+          
+          <div class="form-group mb-4">
+            <label for="subject" style="font-weight: 500; margin-bottom: 8px; color: #444;">Subject</label>
+            <input id="subject" class="form-control form-control-lg wow fadeInUp" data-wow-delay="0.5s" type="text" name="subject" placeholder="What's this about?" style="border-radius: 8px; border: 2px solid #eee; padding: 12px 15px; transition: all 0.3s ease; background-color: #f9f9f9;">
+          </div>
+          
+          <div class="form-group mb-4">
+            <label for="message" style="font-weight: 500; margin-bottom: 8px; color: #444;">Your Message</label>
+            <textarea id="message" class="form-control form-control-lg wow fadeInUp" data-wow-delay="0.6s" name="message" rows="6" placeholder="Tell me about your project or inquiry..." style="border-radius: 8px; border: 2px solid #eee; padding: 12px 15px; transition: all 0.3s ease; background-color: #f9f9f9; min-height: 150px;"></textarea>
+          </div>
+          
+          <div class="text-center mt-5">
+            <button type="submit" class="btn btn-theme btn-rounded wow fadeInUp px-5 py-3" data-wow-delay="0.7s" style="font-size: 1.1rem; letter-spacing: 0.5px; box-shadow: 0 5px 15px rgba(112, 68, 193, 0.3); transition: all 0.3s ease;">
+              Send Message
+              <i class="ti-arrow-right ml-2" style="margin-left: 8px;"></i>
+            </button>
+          </div>
         </form>
+      </div>
+    </div>
+    
+    <div class="row justify-content-center mt-5">
+      <div class="col-lg-8 text-center">
+        <div class="contact-info-wrapper" style="display: flex; justify-content: center; gap: 40px; margin-top: 30px; flex-wrap: wrap;">
+          <div class="contact-info-item wow fadeInUp" data-wow-delay="0.1s" style="padding: 20px; min-width: 200px; background-color: #ffffff; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.08);">
+            <div style="font-size: 2rem; color: #7044C1; margin-bottom: 15px;">
+              <i class="ti-email"></i>
+            </div>
+            <h5 style="margin-bottom: 5px; font-weight: 600;">Email</h5>
+            <p style="color: #666;">Yasser040503@gmail.com</p>
+          </div>
+          
+          <div class="contact-info-item wow fadeInUp" data-wow-delay="0.2s" style="padding: 20px; min-width: 200px; background-color: #ffffff; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.08);">
+            <div style="font-size: 2rem; color: #7044C1; margin-bottom: 15px;">
+              <i class="ti-mobile"></i>
+            </div>
+            <h5 style="margin-bottom: 5px; font-weight: 600;">Phone</h5>
+            <p style="color: #666;">+1 (438) 470-4321</p>
+          </div>
+          
+          <div class="contact-info-item wow fadeInUp" data-wow-delay="0.3s" style="padding: 20px; min-width: 200px; background-color: #ffffff; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.08);">
+            <div style="font-size: 2rem; color: #7044C1; margin-bottom: 15px;">
+              <i class="ti-location-pin"></i>
+            </div>
+            <h5 style="margin-bottom: 5px; font-weight: 600;">Location</h5>
+            <p style="color: #666;">Montreal, Quebec, Canada</p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
