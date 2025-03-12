@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Revamp</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="../assets/css/themify-icons.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../assets/vendor/animate/animate.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/virtual.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/minibar.virtual.css">
+    <link rel="stylesheet" type="text/css" href="../styles.css">
+</head>
+
+<body class="theme-purple">
+
+    <!-- Back to top button -->
+    <div class="btn-back_to_top">
+        <span class="ti-arrow-up"></span>
+    </div>
+
+    <!-- Mini bar -->
+    <div class="minibar">
+        <div class="header">
+            <div class="brand"></div>
+        </div>
+        <div class="content">
+            <ul class="main-menu">
+                <li class="menu-item active">
+                    <a href="../index.html#portfolio" class="menu-link">
+                        <span class="icon ti-arrow-left"></span>
+                        <span class="caption">Back</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="project-container">
+        <h1>Resume Revamp</h1>
+
+        <div class="project-description">
+            <p><strong>Project Overview:</strong> Resume Revamp is a comprehensive job application platform designed to help job seekers optimize their resumes for specific job descriptions. The application employs intelligent matching algorithms to analyze resumes against job descriptions, identify keyword matches, and suggest improvements to increase candidates' chances of passing through Applicant Tracking Systems (ATS).</p>
+        </div>
+
+        <div class="features-grid">
+            <div class="feature-card">
+                <h2>Key Features: Resume Optimization</h2>
+                <ul>
+                    <li><strong>ATS Score Analysis:</strong> Evaluates resumes against industry-standard ATS systems and provides a numerical score</li>
+                    <li><strong>Keyword Matching:</strong> Automatically identifies matching and missing keywords between resumes and job descriptions</li>
+                    <li><strong>Skill Gap Analysis:</strong> Highlights skills present in the job description but missing from the resume</li>
+                    <li><strong>Experience Relevance Scoring:</strong> Analyzes the relevance of past work experiences to target positions</li>
+                </ul>
+            </div>
+            <div class="feature-card">
+                <h2>Resume Management</h2>
+                <ul>
+                    <li><strong>Manual Resume Building:</strong> Intuitive interface for creating detailed resumes with sections for:</li>
+                    <ul>
+                        <li>Professional summary</li>
+                        <li>Skills with visual chip-based UI</li>
+                        <li>Work experience with company, duration, and descriptions</li>
+                        <li>Education with degree, institution, and achievements</li>
+                        <li>Projects with descriptions and technologies used</li>
+                        <li>Certifications with issuers and dates</li>
+                        <li>Languages with proficiency levels</li>
+                        <li>Publications with publishers and URLs</li>
+                    </ul>
+                </ul>
+            </div>
+            <div class="feature-card">
+                <h2>User Experience</h2>
+                <ul>
+                    <li><strong>Mobile-Responsive Design:</strong> Optimized for various screen sizes with adaptive layouts</li>
+                    <li><strong>Modern UI Components:</strong> Uses Material Icons and custom styled components</li>
+                    <li><strong>Intuitive Navigation:</strong> Clean card-based interface with clear section organization</li>
+                    <li><strong>Interactive Elements:</strong> Add/remove functionality for all resume components</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="features-grid">
+            <div class="feature-card">
+                <h2>Technical Implementation: Frontend (App)</h2>
+                <ul>
+                    <li><strong>Framework:</strong> React Native</li>
+                    <li><strong>UI Components:</strong> Custom-designed components with responsive styling</li>
+                    <li><strong>State Management:</strong> React hooks for local state and context for global state</li>
+                    <li><strong>Styling:</strong> StyleSheet with theme constants (colors, spacing, typography)</li>
+                </ul>
+            </div>
+            <div class="feature-card">
+                <h2>Technical Implementation: Backend (API)</h2>
+                <ul>
+                    <li><strong>Server:</strong> Node.js</li>
+                    <li><strong>Database:</strong> SQL database (indicated by sql.sql file)</li>
+                    <li><strong>Authentication:</strong> Token-based authentication system</li>
+                    <li><strong>Optimization Logic:</strong> Advanced algorithms for keyword extraction and matching</li>
+                </ul>
+            </div>
+            <div class="feature-card">
+                <h2>Key Technical Challenges Solved</h2>
+                <ul>
+                    <li>Efficient keyword matching between resumes and job descriptions</li>
+                    <li>Dynamic UI for managing complex nested resume data</li>
+                    <li>Responsive design accommodating various screen sizes and entry methods</li>
+                    <li>Secure user authentication and data storage</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Website Demo Section -->
+        <div class="demo-container">
+            <h2 class="text-center mb-4">Live Demo</h2>
+            <div class="iframe-container" style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.15); margin: 0 auto; max-width: 95%;">
+                <div style="padding: 10px; background: #f5f5f5; border-bottom: 1px solid #ddd; display: flex; align-items: center;">
+                    <div style="display: flex; gap: 6px; margin-right: 10px;">
+                        <span style="height: 12px; width: 12px; background-color: #ff5f57; border-radius: 50%; display: inline-block;"></span>
+                        <span style="height: 12px; width: 12px; background-color: #ffbd2e; border-radius: 50%; display: inline-block;"></span>
+                        <span style="height: 12px; width: 12px; background-color: #28ca41; border-radius: 50%; display: inline-block;"></span>
+                    </div>
+                    <div style="flex-grow: 1; text-align: center; font-size: 14px; color: #555; font-weight: 500;">resume-revamp-website.vercel.app</div>
+                </div>
+                <iframe src="https://resume-revamp-website.vercel.app/" title="Resume Revamp Demo" frameborder="0" width="100%" height="600px" allowfullscreen style="display: block;"></iframe>
+            </div>
+            <p class="text-center mt-4">
+                <a href="https://resume-revamp-website.vercel.app/" target="_blank" class="github-link">
+                    Experience Full Demo
+                </a>
+            </p>
+        </div>
+    </div>
+
+    <script src="../assets/js/workdisplay.js" defer></script>
+</body>
+
+</html>
